@@ -10,11 +10,12 @@
     <Deterministic>true</Deterministic>
   </PropertyGroup>
 
-  <!-- TODO: RepositoryUrl -->
   <PropertyGroup>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Authors>Christo Polydorou</Authors>
     <Copyright>Copyright (c) 2026 Christo Polydorou</Copyright>
+    <PackageProjectUrl>https://github.com/christo-polydorou/MessageFormat2</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/christo-polydorou/MessageFormat2.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 

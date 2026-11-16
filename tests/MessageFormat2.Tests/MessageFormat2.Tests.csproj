@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- net11.0 runs the net10.0 build on the next runtime -->
+    <TargetFrameworks>net8.0;net10.0;net11.0</TargetFrameworks>
+    <OutputType>Exe</OutputType>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="xunit.v3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\MessageFormat2\MessageFormat2.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="spec-tests\tests\**\*.json" CopyToOutputDirectory="PreserveNewest" LinkBase="spec-tests\tests" />
+    <None Include="..\..\tools\PluralRuleGenerator\cldr\*.json" CopyToOutputDirectory="PreserveNewest" LinkBase="cldr" />
+  </ItemGroup>
+
+</Project>
